@@ -1,0 +1,57 @@
+ /* Base styles for mobile */
+ body {
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    background-color: #343a40;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.main-content {
+    padding: 1rem;
+}
+
+.card {
+    margin-bottom: 1rem;
+}
+
+/* Sidebar styles for mobile */
+.sidebar h3 {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.nav-link {
+    color: #ccc;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: #fff;
+}
+
+/* Card styling */
+.card-title {
+    font-size: 1rem;
+}
+
+.card-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+    .sidebar {
+        padding-top: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 2rem;
+    }
+}

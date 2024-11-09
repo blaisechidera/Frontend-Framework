@@ -1,0 +1,14 @@
+{
+  "name": "frontend_framwork_group5",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\""
+  },
+  "author": " Chidera Blaise Nwosu, Michael Arasga",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
