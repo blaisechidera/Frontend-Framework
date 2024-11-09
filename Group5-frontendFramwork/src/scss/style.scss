@@ -56,6 +56,10 @@ $blue-border: #007bff;  // blue border
   }
 }
 
+#graphcard {
+  width: 100%;  /* Makes sure the canvas fills the container's width */
+  height: 400px; /* Set a fixed height for the graph */
+  max-width: 100%; /* Prevents it from stretching beyond the container */}
 
 
 #todaystrend {
@@ -188,5 +192,51 @@ p {
   text-align: right;
 }
 
+/* Hide default radio button */
+.custom-radio {
+  display: none;
+}
+
+/* Custom radio button */
+.custom-radio + .form-check-label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.custom-radio + .form-check-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Add checkmark when checked */
+.custom-radio:checked + .form-check-label::after {
+  content: "✔";
+  position: absolute;
+  left: 1.5px;
+  top: -2px;
+  font-size: 14px;
+  color: #fff ;
+}
+
+/* On hover */
+.custom-radio + .form-check-label:hover::before {
+  border-color: #0056b3;
+}
+
+/* On active */
+.custom-radio:checked + .form-check-label::before {
+  background-color: #007bff;
+  border-color: #007bff;
+}
 
 /*# sourceMappingURL=style.css.map */
