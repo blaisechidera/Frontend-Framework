@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "lite-server --baseDir=\"public\""
+    "peekaboo": "lite-server --baseDir=\"public\"",
+    "frontendstyler": "sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run peekaboo\" \"npm run frontendstyler\""
   },
   "author": " Chidera Blaise Nwosu, Michael Arasga",
   "license": "private",
   "private": true,
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "concurrently": "^9.0.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.79.4"
   }
 }

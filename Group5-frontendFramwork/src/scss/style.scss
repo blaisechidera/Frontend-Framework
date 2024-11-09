@@ -1,3 +1,10 @@
+@media (min-width: 768px) {}
+
+$h5: 20px;
+$h3: 16px;
+$greyedtext: #a5a7b3;
+// $feintstroke: #e2e2e6;
+
 #ulnav {
   gap: 10px;
 }
@@ -18,7 +25,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #a5a7b3;
+  color: $greyedtext;
 }
 
 .card-number {
@@ -29,18 +36,27 @@
   align-items: center;
 }
 
+// Define blue glow color
+// $blue-border: rgba(0, 0, 255, 0.5);  // Adjust the opacity for the glow effect
+$blue-border: #007bff;  // blue border
+
+
 .card {
   margin: 20px 0px;
   padding-top: 20px;
   background-color: white;
+  // box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.144);
   border: 2px solid transparent;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease; // Smooth transition for transform and background-color
+
+  &:hover {
+    transform: translateY(-5px); // Lift the card slightly on hover
+    background-color: rgb(240, 240, 240); // background change
+    border: 2px solid $blue-border // blue border on hover
+  }
 }
-.card:hover {
-  transform: translateY(-5px);
-  background-color: rgb(240, 240, 240);
-  border: 2px solid #007bff;
-}
+
+
 
 #todaystrend {
   width: 94%;
@@ -51,12 +67,15 @@
   align-items: center;
 }
 
+// Graph
 #graphcard {
   width: auto;
   height: auto;
   padding: 0;
 }
 
+// Info beside graph
+// Middle section
 #rowinfo {
   display: flex;
   flex-direction: column;
@@ -96,20 +115,22 @@
 
 h3 {
   font-family: Mulish;
-  font-size: 16px;
+  font-size: $h3;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  color: #a5a7b3;
+  color: $greyedtext;
+
 }
 
 h5 {
   font-family: Mulish;
-  font-size: 20px;
+  font-size: $h5;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
   color: #252733;
+
 }
 
 #h5special {
@@ -119,15 +140,18 @@ h5 {
   line-height: 24px;
   text-align: center;
   color: #252733;
+
 }
 
 h6 {
+
   font-family: Mulish;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   text-align: center;
-  color: #a5a7b3;
+  color: $greyedtext;
+
 }
 
 #h6special {
@@ -136,7 +160,7 @@ h6 {
   font-weight: 400;
   line-height: 16px;
   text-align: left;
-  color: #a5a7b3;
+  color: $greyedtext;
 }
 
 p {
@@ -145,24 +169,24 @@ p {
   font-weight: 400;
   line-height: 16px;
   text-align: center;
-  color: #a5a7b3;
+  color: $greyedtext;
 }
 
-.mytable > tbody > tr > td,
-.mytable > tbody > tr > th,
-.mytable > tfoot > tr > td,
-.mytable > tfoot > tr > th,
-.mytable > thead > tr > td,
-.mytable > thead > tr > th {
+.mytable>tbody>tr>td,
+.mytable>tbody>tr>th,
+.mytable>tfoot>tr>td,
+.mytable>tfoot>tr>th,
+.mytable>thead>tr>td,
+.mytable>thead>tr>th {
   padding: 15px;
 }
 
+// Right text styling
 .righttext {
   display: flex;
   justify-content: right;
   text-align: right;
 }
-
 
 
 /*# sourceMappingURL=style.css.map */
