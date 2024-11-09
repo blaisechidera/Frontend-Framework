@@ -1,3 +1,13 @@
+@media (min-width: 768px) {
+  #sidebar {
+    display: block;
+  }
+}
+/* Hide sidebar on mobile by default */
+#sidebar {
+  display: none;
+}
+
 #ulnav {
   gap: 10px;
 }

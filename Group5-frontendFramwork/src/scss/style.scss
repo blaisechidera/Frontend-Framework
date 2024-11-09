@@ -1,4 +1,14 @@
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  #sidebar {
+  display: block;
+}
+}
+
+/* Hide sidebar on mobile by default */
+#sidebar {
+  display: none;
+}
+
 
 $h5: 20px;
 $h3: 16px;

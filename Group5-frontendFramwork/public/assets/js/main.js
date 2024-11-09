@@ -1,3 +1,9 @@
+// Toggle sidebar visibility on button click
+document.getElementById("sidebarToggle").addEventListener("click", function() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.classList.toggle("d-block");
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   var ctx = document.getElementById('graphcard').getContext('2d');
   var myChart = new Chart(ctx, {
