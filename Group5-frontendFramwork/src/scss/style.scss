@@ -240,12 +240,12 @@ p {
 
 /* Add checkmark when checked */
 .custom-radio:checked + .form-check-label::after {
-  content: "\2713";
+  content: "\f00c";
   position: absolute;
-  left: 4px;
-  top: -4px;
-  font-size: 18px;
-  font-weight: bolder;
+  left: 2px;
+  top: -1px;
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 800;
   color: #fff !important ;
 }
 
