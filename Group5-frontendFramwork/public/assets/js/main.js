@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var myChart = new Chart(ctx, {
     type: 'line', // Line chart type
     data: {
-      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'], // X-axis labels
+      labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], // X-axis labels
       datasets: [{
-        label: 'Trends',
+        label: "Today's trends",
         data: [12, 19, 3, 5, 2, 3, 12], // Y-axis data values
         borderColor: '#007bff', // Line color
         backgroundColor: 'rgba(0, 123, 255, 0.2)', // Area color (light blue)
