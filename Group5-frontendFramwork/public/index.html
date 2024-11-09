@@ -204,8 +204,7 @@
 
                 <!--4 Cards -->
                 <div class="row" id="overviewcards">
-                    <!-- Change: Added col-12 col-md-6 col-lg-3 classes to each card -->
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Unresolved</h5>
@@ -213,7 +212,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
                         <div class="card custom-card ">
                             <div class="card-body">
                                 <h5 class="card-title">Overdue</h5>
@@ -221,7 +220,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Open</h5>
@@ -229,7 +228,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">On hold</h5>
@@ -247,7 +246,7 @@
                     </div>
 
                     <!-- Info Section -->
-                <div class="col-lg-4 col-sm-12 bg-white" id="rowinfo">
+                <div class="col-lg-4 col-sm-12 bg-white overflow-hidden" id="rowinfo">
                     <div class="row" id="rowtext">
                         <h3>Resolved</h3>
                         <h5 id="h5special">449</h5>
@@ -278,8 +277,10 @@
                 <!-- Last rows -->
                 <!-- Bottom left table section 1 -->
                 <div class="row" id="lastcards">
-                    <div class="col-md-6 mb-3">
-                        <div class="card p-3" id="leftcard">
+                        
+                    <!-- Bottom left table section 1 -->
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="card p-3 h-100" id="leftcard">
                             <!-- title -->
                             <div class="card-body d-flex flex-column">
                                 <div class="c-details d-flex d-flex justify-content-between align-items-end">
@@ -295,28 +296,20 @@
                                 <table class="table mytable mb-3 ">
                                     <tbody>
                                         <tr>
-                                            <td class="pl-0">Waiting on Feature Request</td>
-                                            <td class="pr-0 text-right">
-                                                <div class="righttext ">4238</div>
-                                            </td>
+                                            <td>Waiting on Feature Request</td>
+                                            <td class="text-right">4238</td>
                                         </tr>
                                         <tr>
-                                            <td class="pl-0">Awaiting Customer Response</td>
-                                            <td class="pr-0 text-right">
-                                                <div class="righttext">1005</div>
-                                            </td>
+                                            <td>Awaiting Customer Response</td>
+                                            <td class="text-right">1005</td>
                                         </tr>
                                         <tr>
-                                            <td class="pl-0">Awaiting Developer Fix</td>
-                                            <td class="pr-0 text-right">
-                                                <div class="righttext">914</div>
-                                            </td>
+                                            <td>Awaiting Developer Fix</td>
+                                            <td class="text-right">914</td>
                                         </tr>
                                         <tr>
-                                            <td class="pl-0">Pending</td>
-                                            <td class="pr-0 text-right">
-                                                <div class="righttext">281</div>
-                                            </td>
+                                            <td>Pending</td>
+                                            <td class="text-right">281</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -325,8 +318,8 @@
                         </div>
                     </div>
                     
-                    <div class="col-md-6 mb-3">
-                        <div class="card  mx-3" id="rightcard">
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="card p-3 h-100" id="rightcard">
     
                             <!-- title -->
                             <div class="card-body d-flex flex-column ">
@@ -340,54 +333,46 @@
     
     
                             <!-- list -->
-                            <ul class="list-group">
+                            <ul class="list-group list-group-flush">
     
     
                                 <!-- create new task -->
-                                <li class="list-group-item">
+                                <li class="list-group-item d- align-items-center">
     
-                                    <p>Create new task</p>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <p class="mb-0 me auto">Create new task</p>
+                                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect width="24" height="24" rx="8" fill="#F0F1F7"/>
                                         <path d="M12 7V17" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round"/>
                                         <path d="M17 12L7 12" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round"/>
                                     </svg>
-                                        
-    
                                 </li>
-    
-                                <!-- Radios with custom round checkmark -->
-                                <li class="list-group-item">
+                
+                                <!-- Task items with radio buttons -->
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
                                     <div>
-                                        <input class="form-check-input custom-radio" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+                                        <input class="form-check-input custom-radio" type="radio" name="listGroupRadio" id="firstRadio" checked>
                                         <label class="form-check-label" for="firstRadio">Finish ticket update</label>
                                     </div>
                                     <span class="badge text-bg-warning">URGENT</span>
                                 </li>
-                                <li class="list-group-item">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
                                     <div>
-                                        <input class="form-check-input custom-radio" type="radio" name="listGroupRadio" value="" id="secondRadio">
+                                        <input class="form-check-input custom-radio" type="radio" name="listGroupRadio" id="secondRadio">
                                         <label class="form-check-label" for="secondRadio">Create new ticket example</label>
                                     </div>
                                     <span class="badge text-bg-success">NEW</span>
                                 </li>
-                                <li class="list-group-item">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
                                     <div>
-                                        <input class="form-check-input custom-radio" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+                                        <input class="form-check-input custom-radio" type="radio" name="listGroupRadio" id="thirdRadio">
                                         <label class="form-check-label" for="thirdRadio">Update ticket report</label>
                                     </div>
                                     <span class="badge text-bg-light">DEFAULT</span>
                                 </li>
                             </ul>
-    
-    
                         </div>
-    
                     </div>
-                </div>    
-                    
-        </div>
-    </div>
+                </div>
     <script src="/assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
