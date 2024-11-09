@@ -240,12 +240,13 @@ p {
 
 /* Add checkmark when checked */
 .custom-radio:checked + .form-check-label::after {
-  content: "✔";
+  content: "\2713";
   position: absolute;
-  left: 1.5px;
-  top: -2px;
-  font-size: 14px;
-  color: #fff ;
+  left: 4px;
+  top: -4px;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #fff !important ;
 }
 
 /* On hover */
