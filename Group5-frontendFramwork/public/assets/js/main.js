@@ -19,7 +19,17 @@ document.addEventListener('DOMContentLoaded', function () {
         tension: 0.4, // Smooth curve for the line
         pointBackgroundColor: '#007bff', // Point color
         pointRadius: 10, // Point size
+      }, {
+        label: "Yesterday",
+        data: [8, 16, 3, 6, 4, 2, 10], // Y-axis data values
+        borderColor: '#007bff', // Line color
+        backgroundColor: 'rgba(128, 128, 128, 0.2)', // Area color (light grey)
+        fill: true, // To fill the area under the line (creating the curved effect)
+        tension: 0.4, // Smooth curve for the line
+        pointBackgroundColor: '#A9A9A9', // Point color
+        pointRadius: 10, // Point size
       }]
+      
     },
     options: {
       scales: {
