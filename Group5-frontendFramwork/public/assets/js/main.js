@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }, {
         label: "Yesterday",
         data: [8, 16, 3, 6, 4, 2, 10], // Y-axis data values
-        borderColor: '#007bff', // Line color
+        borderColor: '#696969 ', // Line color
         backgroundColor: 'rgba(128, 128, 128, 0.2)', // Area color (light grey)
         fill: true, // To fill the area under the line (creating the curved effect)
         tension: 0.4, // Smooth curve for the line

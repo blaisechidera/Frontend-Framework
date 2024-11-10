@@ -1,4 +1,3 @@
-
 /* Hide sidebar on mobile by default */
 #sidebar {
   display: none;
@@ -45,7 +44,7 @@ $greyedtext: #a5a7b3;
 }
 
 // Define blue glow color
-$blue-border: #007bff;  // blue border
+$blue-border: #007bff; // blue border
 $font-hover: #007bff;
 
 
@@ -66,9 +65,13 @@ $font-hover: #007bff;
 }
 
 #graphcard {
-  width: 100%;  /* Makes sure the canvas fills the container's width */
-  height: 400px; /* Set a fixed height for the graph */
-  max-width: 100%; /* Prevents it from stretching beyond the container */}
+  width: 100%;
+  /* Makes sure the canvas fills the container's width */
+  height: 400px;
+  /* Set a fixed height for the graph */
+  max-width: 100%;
+  /* Prevents it from stretching beyond the container */
+}
 
 
 #todaystrend {
@@ -96,7 +99,8 @@ $font-hover: #007bff;
   justify-content: space-evenly;
   background-color: white;
   padding: 0px;
-  border: 1px solid #ddd; /* Add a border around the entire container */
+  border: 1px solid #ddd;
+  /* Add a border around the entire container */
   border-radius: 0px;
 }
 
@@ -104,7 +108,8 @@ $font-hover: #007bff;
   border: 1px solid #ddd;
   padding: 1rem;
   // margin-bottom: 1rem;
-  border-radius: 0%; /* Optional: to add rounded corners */
+  border-radius: 0%;
+  /* Optional: to add rounded corners */
 }
 
 #middlerow {
@@ -112,7 +117,7 @@ $font-hover: #007bff;
   height: auto;
   display: flex;
   background-color: white;
-  
+
 }
 
 
@@ -122,16 +127,19 @@ $font-hover: #007bff;
   flex-direction: column;
   align-items: flex-start;
   padding: 10px;
-  border-bottom: 1px solid #ddd; /* Border between rows */
+  border-bottom: 1px solid #ddd;
+  /* Border between rows */
 }
 
 /* Style for individual rows inside the info section */
 #rowinfo .row {
   display: flex;
   flex-direction: column;
-  align-items: stretch; /* Make sure the rows stretch to fill the container */
+  align-items: stretch;
+  /* Make sure the rows stretch to fill the container */
   padding: 12px 15px;
-  border-bottom: 1px solid #ddd; /* Border between rows */
+  border-bottom: 1px solid #ddd;
+  /* Border between rows */
 }
 
 /* Remove bottom border from the last row */
@@ -237,14 +245,14 @@ p {
 }
 
 /* Custom radio button */
-.custom-radio + .form-check-label {
+.custom-radio+.form-check-label {
   position: relative;
   padding-left: 30px;
   cursor: pointer;
   font-size: 16px;
 }
 
-.custom-radio + .form-check-label::before {
+.custom-radio+.form-check-label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -258,32 +266,32 @@ p {
 }
 
 /* Add checkmark when checked */
-.custom-radio:checked + .form-check-label::after {
+.custom-radio:checked+.form-check-label::after {
   content: "\f00c";
   position: absolute;
   left: 2px;
   top: -2px;
-  font-family: "Font Awesome 5 Free"; 
+  font-family: "Font Awesome 5 Free";
   font-weight: 800;
-  color: #fff !important ;
+  color: #fff !important;
 }
 
 /* On hover */
-.custom-radio + .form-check-label:hover::before {
+.custom-radio+.form-check-label:hover::before {
   border-color: #0056b3;
 }
 
 /* On active */
-.custom-radio:checked + .form-check-label::before {
+.custom-radio:checked+.form-check-label::before {
   background-color: #007bff;
   border-color: #007bff;
 }
 
 @media (min-width: 768px) {
   #sidebar {
-  display: block;
-  right: 5px;
-}
+    display: block;
+    right: 5px;
+  }
 
 
 }
