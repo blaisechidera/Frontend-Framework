@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         fill: true, // To fill the area under the line (creating the curved effect)
         tension: 0.4, // Smooth curve for the line
         pointBackgroundColor: '#007bff', // Point color
-        pointRadius: 5, // Point size
+        pointRadius: 10, // Point size
       }]
     },
     options: {

@@ -1,7 +1,10 @@
 @media (min-width: 768px) {
   #sidebar {
   display: block;
+  right: 5px;
 }
+
+
 }
 
 /* Hide sidebar on mobile by default */
@@ -13,7 +16,6 @@
 $h5: 20px;
 $h3: 16px;
 $greyedtext: #a5a7b3;
-// $feintstroke: #e2e2e6;
 
 #ulnav {
   gap: 10px;
@@ -47,7 +49,6 @@ $greyedtext: #a5a7b3;
 }
 
 // Define blue glow color
-// $blue-border: rgba(0, 0, 255, 0.5);  // Adjust the opacity for the glow effect
 $blue-border: #007bff;  // blue border
 
 
@@ -93,7 +94,7 @@ $blue-border: #007bff;  // blue border
 #rowinfo {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   justify-content: space-between;
   background-color: white;
   padding: 0px;
