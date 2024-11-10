@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var myChart = new Chart(ctx, {
     type: 'line', // Line chart type
     data: {
-      labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], // X-axis labels
+      labels: ['8:00', '10:00', '12:00', '14:00', '16:00', '20:00', '22:00'], // X-axis labels
       datasets: [{
         label: "Today's trends",
         data: [12, 19, 3, 5, 2, 3, 12], // Y-axis data values
