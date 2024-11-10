@@ -7,8 +7,12 @@
   gap: 10px;
 }
 
+#ulnav .nav-link:hover {
+  border-bottom: 3px solid #007bff;
+}
+
 #highlightednav {
-  padding: 16px 80px 16px 16px;
+  padding: 16px 80px 16px 60px;
   text-decoration: none;
   font-style: white;
 }
@@ -45,6 +49,7 @@
 .card:hover {
   transform: translateY(-5px);
   background-color: rgb(240, 240, 240);
+  color: #007bff;
   border: 2px solid #007bff;
 }
 
