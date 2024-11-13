@@ -4,6 +4,28 @@ document.getElementById("sidebarToggle").addEventListener("click", function() {
   sidebar.classList.toggle("d-block");
 });
 
+//Initialize the Popover
+document.addEventListener("DOMContentLoaded", function () {
+  var popoverTrigger = document.querySelector('[data-bs-toggle="popover"]');
+  var popover = new bootstrap.Popover(popoverTrigger, {
+      trigger: 'manual'
+  });
+
+  // Show popover when clicked
+  popoverTrigger.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent default link action
+      popover.toggle(); // Toggle the popover visibility
+  });
+
+  // Close popover when clicking outside
+  document.addEventListener('click', function (e) {
+      if (popoverTrigger && !popoverTrigger.contains(e.target) && document.querySelector('.popover') && !document.querySelector('.popover').contains(e.target)) {
+          popover.hide();
+      }
+  });
+});
+
+//Line graph chart
 document.addEventListener('DOMContentLoaded', function () {
   var ctx = document.getElementById('graphcard').getContext('2d');
   var myChart = new Chart(ctx, {
