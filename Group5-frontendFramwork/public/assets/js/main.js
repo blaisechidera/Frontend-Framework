@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//Create task modal
 document.addEventListener("DOMContentLoaded", function () {
   var createTaskModal = new bootstrap.Modal(
     document.getElementById("createTaskModal")

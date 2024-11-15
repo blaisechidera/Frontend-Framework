@@ -199,7 +199,7 @@ h5 {
   color: #252733;
 }
 
-#h5special {
+.h5special {
   font-family: Mulish;
   font-size: 24px;
   font-weight: 700;
@@ -217,7 +217,7 @@ h6 {
   color: #a5a7b3;
 }
 
-#h6special {
+.h6special {
   font-family: Mulish;
   font-size: 12px;
   font-weight: 400;
