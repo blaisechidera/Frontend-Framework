@@ -26,8 +26,10 @@ ul.list-unstyled li {
 /* Hover effect for the search and notification icons */
 ul.list-unstyled li:hover svg circle,
 ul.list-unstyled li:hover svg path {
-  stroke: #007bff; /* Blue stroke for the search icon */
-  transform: scale(1.1); /* Slight scaling effect on hover */
+  stroke: #007bff;
+  /* Blue stroke for the search icon */
+  transform: scale(1.1);
+  /* Slight scaling effect on hover */
 }
 
 #overviewcards {

@@ -3,7 +3,6 @@
   display: none;
 }
 
-
 $h5: 20px;
 $h3: 16px;
 $greyedtext: #a5a7b3;
@@ -31,9 +30,11 @@ ul.list-unstyled li {
 /* Hover effect for the search and notification icons */
 ul.list-unstyled li:hover svg circle,
 ul.list-unstyled li:hover svg path {
-  stroke: #007bff; /* Blue stroke for the search icon */
+  stroke: #007bff;
+  /* Blue stroke for the search icon */
   // fill: #007bff;   /* Blue fill for the notification icon */
-  transform: scale(1.1); /* Slight scaling effect on hover */
+  transform: scale(1.1);
+  /* Slight scaling effect on hover */
 }
 
 #overviewcards {
@@ -61,7 +62,6 @@ ul.list-unstyled li:hover svg path {
 $blue-border: #007bff; // blue border
 $font-hover: #007bff;
 
-
 .card {
   margin: 20px 0px;
   padding-top: 20px;
@@ -71,12 +71,11 @@ $font-hover: #007bff;
   // transition: transform 0.3s ease, background-color 0.3s ease; // Smooth transition for transform and background-color
   transition: none; // Disable transition
 
-
   &:hover {
     transform: translateY(-5px); // Lift the card slightly on hover
     background-color: rgb(240, 240, 240); // background change
     color: $font-hover;
-    border: 2px solid $blue-border // blue border on hover
+    border: 2px solid $blue-border; // blue border on hover
   }
 }
 
@@ -89,6 +88,7 @@ $font-hover: #007bff;
 .modal {
   z-index: 1050 !important;
 }
+
 .modal-backdrop {
   z-index: 1040 !important;
 }
@@ -111,7 +111,6 @@ $font-hover: #007bff;
   max-width: 100%;
   /* Prevents it from stretching beyond the container */
 }
-
 
 #todaystrend {
   width: 94%;
@@ -156,10 +155,7 @@ $font-hover: #007bff;
   height: auto;
   display: flex;
   background-color: white;
-
 }
-
-
 
 #rowtext {
   display: flex;
@@ -210,7 +206,6 @@ h3 {
   line-height: 24px;
   text-align: center;
   color: $greyedtext;
-
 }
 
 h5 {
@@ -220,7 +215,6 @@ h5 {
   line-height: 24px;
   text-align: center;
   color: #252733;
-
 }
 
 #h5special {
@@ -230,18 +224,15 @@ h5 {
   line-height: 24px;
   text-align: center;
   color: #252733;
-
 }
 
 h6 {
-
   font-family: Mulish;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   text-align: center;
   color: $greyedtext;
-
 }
 
 #h6special {
@@ -262,12 +253,12 @@ p {
   color: $greyedtext;
 }
 
-.mytable>tbody>tr>td,
-.mytable>tbody>tr>th,
-.mytable>tfoot>tr>td,
-.mytable>tfoot>tr>th,
-.mytable>thead>tr>td,
-.mytable>thead>tr>th {
+.mytable > tbody > tr > td,
+.mytable > tbody > tr > th,
+.mytable > tfoot > tr > td,
+.mytable > tfoot > tr > th,
+.mytable > thead > tr > td,
+.mytable > thead > tr > th {
   padding: 15px;
 }
 
@@ -284,14 +275,14 @@ p {
 }
 
 /* Custom radio button */
-.custom-radio+.form-check-label {
+.custom-radio + .form-check-label {
   position: relative;
   padding-left: 30px;
   cursor: pointer;
   font-size: 16px;
 }
 
-.custom-radio+.form-check-label::before {
+.custom-radio + .form-check-label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -305,7 +296,7 @@ p {
 }
 
 /* Add checkmark when checked */
-.custom-radio:checked+.form-check-label::after {
+.custom-radio:checked + .form-check-label::after {
   content: "\f00c";
   position: absolute;
   left: 2px;
@@ -316,12 +307,12 @@ p {
 }
 
 /* On hover */
-.custom-radio+.form-check-label:hover::before {
+.custom-radio + .form-check-label:hover::before {
   border-color: #0056b3;
 }
 
 /* On active */
-.custom-radio:checked+.form-check-label::before {
+.custom-radio:checked + .form-check-label::before {
   background-color: #007bff;
   border-color: #007bff;
 }
