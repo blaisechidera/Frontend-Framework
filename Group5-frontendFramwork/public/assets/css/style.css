@@ -44,13 +44,35 @@
   background-color: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.144);
   border: 2px solid transparent;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: none;
 }
 .card:hover {
   transform: translateY(-5px);
   background-color: rgb(240, 240, 240);
   color: #007bff;
   border: 2px solid #007bff;
+}
+
+.no-transform:hover {
+  transform: none;
+}
+
+.modal {
+  z-index: 1050 !important;
+}
+
+.modal-backdrop {
+  z-index: 1040 !important;
+}
+
+.modal-backdrop.show {
+  opacity: 0.5;
+}
+
+.modal-open-custom .card:hover {
+  transform: none;
+  background-color: white;
+  border: 2px solid transparent;
 }
 
 #graphcard {
@@ -265,6 +287,9 @@ p {
   #sidebar {
     display: block;
     right: 5px;
+  }
+  .card:hover {
+    transform: translateY(-5px);
   }
 }
 

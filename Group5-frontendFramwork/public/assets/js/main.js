@@ -25,6 +25,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  var createTaskModal = new bootstrap.Modal(document.getElementById('createTaskModal'));
+});
+
+const modal = document.getElementById('createTaskModal');
+
+modal.addEventListener('show.bs.modal', () => {
+  document.body.classList.add('modal-open-custom');
+});
+
+modal.addEventListener('hidden.bs.modal', () => {
+  document.body.classList.remove('modal-open-custom');
+});
+
 //Line graph chart
 document.addEventListener('DOMContentLoaded', function () {
   var ctx = document.getElementById('graphcard').getContext('2d');
