@@ -17,6 +17,19 @@
   font-style: white;
 }
 
+/* Style for the list items to apply blue hover effect */
+ul.list-unstyled li {
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for the search and notification icons */
+ul.list-unstyled li:hover svg circle,
+ul.list-unstyled li:hover svg path {
+  stroke: #007bff; /* Blue stroke for the search icon */
+  transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
 #overviewcards {
   gap: auto;
 }

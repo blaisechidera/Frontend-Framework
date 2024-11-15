@@ -239,11 +239,29 @@
                         <div class="vr"></div>
                     </div>
 
-                    <div class="p-2" id="name"
-                        style="font-family: Mulish; font-size: 1rem; font-weight: 700; color: rgb(121, 121, 121) ;">
-                        Jones Ferdinand
-                        <img src="assets/images/profilePhoto.png" alt="profile photo" style="padding-left: 12px;">
+                    <!-- Profile name and photo -->
+                <div class="p-2" id="name"
+                style="font-family: Mulish; font-size: 1rem; font-weight: 700; color: rgb(121, 121, 121);">
+                Jones Ferdinand
+                <img src="assets/images/profilePhoto.png" alt="profile photo" style="padding-left: 12px; cursor: pointer;"
+                    id="profilePhoto">
+                </div>
+
+                <!-- Photo Modal Structure -->
+                <div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="photoModalLabel">Profile Photo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <!-- Display the profile photo larger in the modal -->
+                            <img src="assets/images/profilePhoto.png" alt="profile photo" class="img-fluid" style="max-width: 100%; height: auto;">
+                        </div>
                     </div>
+                </div>
+                </div>
 
                 </div>
 

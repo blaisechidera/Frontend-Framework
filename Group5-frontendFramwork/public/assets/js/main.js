@@ -4,6 +4,12 @@ document.getElementById("sidebarToggle").addEventListener("click", function() {
   sidebar.classList.toggle("d-block");
 });
 
+// Select the profile photo by its ID and add a click event listener
+document.getElementById("profilePhoto").addEventListener("click", function() {
+  // Show the photo modal when the profile image is clicked
+  new bootstrap.Modal(document.getElementById("photoModal")).show();
+});
+
 //Initialize the Popover
 document.addEventListener("DOMContentLoaded", function () {
   var popoverTrigger = document.querySelector('[data-bs-toggle="popover"]');
